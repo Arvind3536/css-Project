@@ -1,0 +1,309 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+}
+.main{
+    display: flex;
+    height: 100vh;
+}
+
+.content{
+    background-color: #121212;
+    flex: 1;
+    border-radius: 1rem;
+    margin: 0.5rem;
+    padding: 1rem;
+    overflow: auto;
+}
+
+.sidebar{
+    background-color: black;
+    width: 300px;
+    border-radius: 1rem;
+}
+
+.menu{
+    height: 70px;
+    width: 85%;
+    background-color: #121212;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1.2rem;
+    margin: 1rem 0.5rem;
+    border-radius: 0.8rem;
+}
+.nav-option{
+    line-height: 2.2rem;
+    font-size: 1.2rem;
+    padding: 0.7rem;
+}
+.nav-option:hover{
+    transform: scale(1.1);
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    margin-left: 1rem;
+}
+
+/* librery section*/
+
+.library{
+    background-color: #121212;
+    border-radius: 1rem;
+    height: 100%;
+    padding: 1.2rem;
+    margin: 0.5rem;
+    width: 85%;
+}
+.options{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.options img{
+    height: 1rem;
+    width: 1rem;
+    opacity: 0.7;
+}
+.options img:hover{
+    opacity: 1;
+}
+.options a{
+    opacity: 0.7;
+}
+.options a:hover{
+    opacity: 1;
+}
+
+.sign i{
+    opacity: 0.7;
+    margin-right: 1rem;
+}
+
+.sign i:hover{
+    opacity: 1;
+}
+
+
+.lib-box{
+    
+   
+    height: 8rem;
+}
+.box{
+    margin-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.2rem;
+    padding-bottom: 1rem;
+    background-color: #232323;
+    border-radius: 1rem;
+}
+
+.box-1{
+    font-weight: 700;
+}
+.box-2{
+    font-size: 0.8rem;
+}
+.badge{
+    background-color: white;
+    border: none;
+    border-radius: 1rem;
+    font-size: 1rem;
+    width: fit-content;
+    padding: 0.5rem;
+}
+
+
+/*    main content section*/
+
+.sticky-nav{
+    
+    height: 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 1rem;
+    position: sticky;
+    top: 0;
+    
+}
+.sticky-img{
+    padding-left: 1rem;
+}
+.sticky-btn i{
+    padding-right: 0.5rem;
+}
+.sticky-btn{
+    border: none;
+    border-radius: 1rem;
+    padding: 0.6rem;
+    margin-right: 1rem;
+}
+.dark{
+    background-color: black;
+    color: white;
+}
+
+@media(max-width:1000px)
+{
+    .hide{
+        display: none;
+    }
+    
+}
+
+/* cards section*/
+
+.cards{
+    height: 220px;
+    width: 150px;
+    background-color: #232323;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+.cards img{
+    width: 100%;
+    border-radius: 0.5rem;
+}
+.cards .title{
+    font-weight: 800;
+}
+.cards .info{
+    font-size: 0.7rem;
+}
+
+.cards-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-line{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.line{
+height: 30%;
+width: 90%;
+border-top: 1px solid white;
+opacity: 0.3;
+}
+
+
+/*footer */
+
+.music-player{
+    position:fixed;
+    bottom: 0px;
+    width:100%;
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:black;
+    line-height: 2rem;
+}
+
+.album{
+    width: 25%;
+    display: flex;
+    align-items: center;
+}
+
+.playback{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+ .control-icon{
+    width: 25%;
+ }
+
+ .control{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .playback .control img{
+    height: 16px;
+    margin-left: 1rem;
+    opacity: 0.7;
+ }
+ .playback img:hover{
+    opacity: 1;
+ }
+
+.progress{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .input-range{
+    width: 70%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+ }
+ 
+ .input-range::-webkit-slider-runnable-track{
+    height: 0.2rem;
+    background-color: #ddd;
+    border-radius: 50px;
+ }
+ .input-range::-webkit-slider-thumb{
+appearance: none;
+height: 1rem;
+width: 1rem;
+background-color: #1bd760;
+border-radius: 50%;
+margin-top: -6.5px;
+ }
+
+ .album-img{
+    height: 3rem;
+ }
+ .album-margin{
+    margin-left: 1em;
+ }
+ .album p{
+    font-size: 0.8rem;
+ }
+
+ .control-icon img{
+    height: 1rem;
+    appearance: none;
+
+ }
+ .control-icon input{
+    appearance: none;
+ }
+ .control-icon input::-webkit-slider-runnable-track{
+    height: 0.2rem;
+    background-color: white;
+ }
+ .control-icon input::-webkit-slider-thumb{
+    appearance: none;
+    background-color: #1bd760;
+    margin-top: -6.5px;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+ }
